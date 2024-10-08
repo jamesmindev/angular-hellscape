@@ -1,0 +1,18 @@
+<div>HTML Form
+
+</div>
+
+<form [formGroup]="htmlForm" (ngSubmit)="handleHtmlFormSubmit()">
+  <label>First Name</label>
+  <input type="text" formControlName="firstName" [value]="htmlForm.value.firstName">
+  <label>Last Name</label>
+  <input type="text" formControlName="lastName" [value]="htmlForm.value.lastName">
+  <label>Email</label>
+  <input type="email" formControlName="email" [value]="htmlForm.value.email" />
+
+  <button type="submit" [disabled]="!htmlForm.valid">Submit</button>
+</form>
+
+<button (click)="overrideForm()">Override Form</button>
+
+<!-- <div>Material Form</div> -->

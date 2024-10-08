@@ -1,0 +1,27 @@
+
+
+h1 Form (pug template)
+//- form([formGroup]="htmlForm")
+//-   label First Name
+//-   input(type="text", formControlName="firstName")
+//-   label Last Name
+//-   input(type="text", formControlName="lastName")
+//-   label Email
+//-   input(type="email",formControlName="email")
+//-   button((click)="handleHtmlFormSubmit()") Submit
+
+//- button((click)="overrideForm()") Override Value
+
+//- mat-slide-toggle Toggle Me!
+
+form
+  mat-form-field
+    mat-label Favorite food
+    input(matInput, placeholder="Ex. Pizza" value="Sushi")
+
+//- - var auth = true
+//- #user
+//-   if auth 
+//-     h2 authorised 
+//-   else 
+//-     h2 not auth
